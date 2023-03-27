@@ -1,16 +1,13 @@
 import { useState } from "react";
 import "./App.css";
-import Input from "./components/Input";
+import TextToTranslate from "./components/TextToTranslate";
 import Languages from "./components/Languages";
 import Text from "./components/Text";
 
 function App() {
-  const [languages, setLanguages] = useState("");
+  const [originalText, setOriginalText] = useState("");
   const [translated, setTranslated] = useState("");
 
-  const handleChange = (event) => {
-    return event.preventDefault(), setTranslated(translated);
-  };
   return (
     <div className="App">
       <div className="container">
@@ -19,8 +16,11 @@ function App() {
         </div>
         <section className="translator-container">
           <div>
-            <Input />
-            <Text text={translated} onChange={handleChange} />
+            <TextToTranslate
+              originalText={originalText}
+              setOriginalText={setOriginalText}
+            />
+            <Text translated={translated} setTranslated={setTranslated} />
             <div className="languages-buttons-container">
               <Languages language="French" />
               <Languages language="English" />
