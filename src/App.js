@@ -7,6 +7,10 @@ import Text from "./components/Text";
 function App() {
   const [languages, setLanguages] = useState("");
   const [translated, setTranslated] = useState("");
+
+  const handleChange = (event) => {
+    return event.preventDefault(), setTranslated(translated);
+  };
   return (
     <div className="App">
       <div className="container">
@@ -16,7 +20,7 @@ function App() {
         <section className="translator-container">
           <div>
             <Input />
-            <Text text="" />
+            <Text text={translated} onChange={handleChange} />
             <div className="languages-buttons-container">
               <Languages language="French" />
               <Languages language="English" />
