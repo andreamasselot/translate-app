@@ -8,7 +8,7 @@ const TextToTranslate = (props) => {
       <textarea
         name="text-to-translate"
         id="text-to-translate"
-        cols="60"
+        cols="45"
         rows="7"
         value={props.originalText}
         onChange={handleTextChange}
