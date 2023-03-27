@@ -20,7 +20,9 @@ function App() {
               originalText={originalText}
               setOriginalText={setOriginalText}
             />
-            <Text translated={translated} setTranslated={setTranslated} />
+            <div className="translated-result">
+              <Text translated={translated} setTranslated={setTranslated} />
+            </div>
             <div className="languages-buttons-container">
               <Languages language="French" />
               <Languages language="English" />
