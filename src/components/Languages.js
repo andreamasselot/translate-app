@@ -1,8 +1,8 @@
 const Languages = (props) => {
-    return(
-        <>
-        <button>{props.language}</button>
-        </>
-    )
-}
+  return (
+    <>
+      <button className="language-button">{props.language}</button>
+    </>
+  );
+};
 export default Languages;

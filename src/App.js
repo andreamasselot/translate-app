@@ -30,6 +30,7 @@ function App() {
               <Languages language="Portuguese" />
               <Languages language="Swedish" />
               <Languages language="Norwegian" />
+              <Languages language="Finnish" />
             </div>
           </div>
         </section>

@@ -9,7 +9,7 @@ const TextToTranslate = (props) => {
         name="text-to-translate"
         id="text-to-translate"
         cols="60"
-        rows="10"
+        rows="7"
         value={props.originalText}
         onChange={handleTextChange}
       >
