@@ -18,7 +18,7 @@ button{
   color: white;
   padding: 10px 5px;
   font-size: 16px;
-  
+  cursor: pointer;
 }
 .translator-container{
   margin: auto;
